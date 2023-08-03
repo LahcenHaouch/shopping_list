@@ -94,9 +94,19 @@ body {
   gap: 16px;
 }
 
+#add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 input {
   text-align: center;
   background-color: #dce1eb;
+}
+
+input:focus-visible {
+  outline: auto 1px #00b09b;
 }
 
 input,
