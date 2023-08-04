@@ -110,7 +110,8 @@ input:focus-visible {
 }
 
 input,
-button {
+button,
+#items > li {
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -119,4 +120,19 @@ button {
 button {
   cursor: pointer;
   background: linear-gradient(45deg, #00b09b, #96c93d);
+}
+
+#items {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 16px;
+}
+
+#items > li {
+  flex-grow: 1;
+  background-color: #96c93d;
+  text-align: center;
+  cursor: pointer;
 }
